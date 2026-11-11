@@ -194,6 +194,7 @@ const desktopEnv = {
   XDG_SESSION_TYPE: wayland ? "wayland" : "x11",
   XDG_CURRENT_DESKTOP: "GNOME",
   CUA_DRIVER_PATH: sentinel,
+  OMB_COMPOSIO_BROKER: "on",
   OMB_COMPOSIO_BROKER_URL: `http://127.0.0.1:${brokerAddress.port}`,
   OMB_SMOKE_TEST: "1",
   OMB_SMOKE_CUA: hardDeath || bundled || sessionBlocked ? "0" : "1",
